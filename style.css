@@ -1,0 +1,724 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/klassrum.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav img{
+    width: 300px;
+    margin: 10px 5px 0 0;
+} 
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 6px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+.nav-links ul li a:hover{
+    background-color: red;
+    color: white;
+    transition: 1s;
+    border-radius: 5px;
+}
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 32px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero-btn:hover{
+    background-color: red;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    
+    }
+    .nav-links ul li{
+        display: block;
+        margin: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px 0 0 10px;
+    }
+    .nav-links ul{
+        padding: 20px 10px 0 0 ;
+    }
+
+}
+@media(max-width: 700px){
+    .checkbtn{
+        display: block;
+    }
+}
+
+
+/*
+.text-box{
+    width: 90%;
+    color: white;
+   margin-top: 280px;
+   margin-left: 20px;
+}
+.text-box h1{
+    font-size: 32px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 250px;
+}
+.hero-btn:hover{
+    background-color: red;
+    transition: 1s;
+}*/
+
+@media(max-width:700px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color:red;
+        border-radius: 5px;
+    }
+    
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .navbar a:hover{
+        background-color:blue;
+        border-radius: 5px;
+        padding: 5px 5px;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
+
+
+
+.Course{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding: 100px;
+}
+.Course h1{
+    font-size: 35px;
+    font: weight 600px;
+}
+.Course p{
+    color: grey;
+
+}
+.row{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.course-col{
+    border-radius: 5px;
+    flex-basis: 30%;
+    background-color: blanchedalmond;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.course-col h3{
+    text-align: center;
+    margin: 10px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(4,9,30,0.7);
+}
+.course-col2{
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    flex-basis: 30%;
+    background-color: blanchedalmond;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.course-col2 a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.course-col2 a:hover{
+    background-color: red;
+    border: red;
+    transition: 1s;
+}
+    
+
+@media(max-width:700px){
+
+    .Course h1 p{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .row{
+        flex-direction: column;
+        
+        margin-left: 0px;
+        margin-right: 15px;
+        
+    }
+    .Course p{
+        font-size: 20px;
+    }
+    .course-col{
+        margin: 10px;
+    }
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+.layer{
+    background-color:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.layer:hover{
+    background-color: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500px;
+    color: aliceblue;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 1s;
+}
+.layer:hover h3{
+
+    bottom: 50%;
+    opacity: 1;
+}
+
+/*------Broschyr-----*/
+
+.broschyr{
+    
+    margin: auto;
+    text-align: center;
+}
+.broschyr h1 {
+    margin-top: 40px;
+}
+.broschyr p{
+    margin-top: 10px;
+    color: grey;
+}
+.broschyr a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.broschyr a:hover{
+    background-color: red;
+    transition: 1s;
+}
+/*------recention-----*/
+.recention{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.recention-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: blanchedalmond;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.recention-col img{
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.recention-col p{
+    margin-top: 20px;
+    text-align: left;
+}
+#name{
+    display:inline-block;
+    margin-top: 88px;
+}
+.recention-col h3{
+    margin-top: 30px;
+    }
+@media(max-width:700px){
+    .recention-col img{
+        
+        margin-left: 0px;
+        margin-right: 15px;
+        
+    }
+
+}
+/*------info------*/
+#info{
+    margin: 20px;
+    background-color:blanchedalmond;
+}
+#info .row{
+    padding: 10px 10px;
+}
+#info img{
+    display: flex;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+#info h3{
+    margin: auto;
+    text-align: center;
+}
+#info .row p{
+    color: grey;
+}
+
+/*-----contact------*/
+.Contact{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/image1_.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    padding: 100px 0;
+    
+}
+.Contact h1{
+    color: aliceblue;
+}
+.Contact a{
+    display: inline-block;
+    margin: 20px;
+}
+@media(max-width:700px){
+    .Contact h1{
+        font-size: 24px;
+    }
+}
+
+/*------footer------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: grey;
+}
+
+.footer a img{
+    width: 200px;
+    
+
+}
+.footer ul li a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    background-color: black;
+    color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.footer ul li a:hover{
+    background-color: red;
+    color: white;
+    transition: 1s;
+}
+.icons .fa{
+    color: red;
+    margin: 0 13px;
+    padding: 18px 0;
+}
+
+/* Om Oss Nästa sida*/
+.sub-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(images/natur.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.mitt{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.recention-col .fa{
+    text-decoration: underline;
+}
+.sub-footer{
+    background-color: blanchedalmond;
+}
+
+.sub-footer h4{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+}
+.sub-footer {
+    width: 100%;
+    text-align: center;
+    
+    padding: 30px 0;
+}
+.sub-footer p{
+    color: grey;
+    padding: 0 10px;
+    
+    
+}
+.sub-icons .fa{
+    color: red;
+    margin: 0 13px;
+    padding: 18px 0;
+}
+.sub-text-box h2{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 300px;
+
+}
+.sub-text-box p{
+    text-align: left;
+    padding-left: 20px;
+    margin: 15px;
+}
+/*----------kurser----------*/
+.kurs-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/kurs_eller_program.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.kurs-kurs{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.Course2{
+    width: 80%;
+    margin:auto ;
+    text-align: center;
+    padding: 100px;
+ }
+ 
+ .row2{
+     display: flex;
+     margin-top: 30px;
+     justify-content: space-between;
+ }
+ .course-col2{
+     border-radius: 5px;
+     flex-basis: 30%;
+     background-color: blanchedalmond;
+     padding: 10px;
+     box-sizing: border-box;
+ }
+ .course-col2 h3{
+     text-align: center;
+     margin: 10px;
+ }
+ .course-col2:hover{
+     box-shadow: 0 0 20px 0px rgba(4,9,30,0.7);
+ }
+ @media(max-width:700px){
+     .row2{
+         flex-direction: column;
+         margin:20px;
+     }
+ }
+ .Course a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.Course a:hover{
+    background-color: red;
+    border: red;
+    transition: 1s;
+}
+.Course2 a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.Course2 a:hover{
+    background-color: red;
+    border: red;
+    transition: 1s;
+}
+/*-----contact us page-------*/
+.contact-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box h1{
+    font-size: 40px;
+}
+
+.Karta{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 ;
+}
+.Karta iframe{
+    width: 100%;
+}
+.kontaktOss{
+    width: 80%;
+    margin: auto;
+}
+.kontaktChild{
+    flex-basis: 48%;
+    margin-bottom: 40px;
+}
+.kontaktChild div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.kontaktChild .fa{
+    font-size: 20px;
+    color: red;
+}
+.kontaktChild span{
+    display: flex;
+    margin-top: 10px;
+}
+.form input,.form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+.form button{
+   width: 100px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.form button:hover{
+    background-color: red;
+    transition: 1s;
+}
+.mail{
+    text-decoration: underline;
+}
+/*------Ansöka/boka------*/
+.boka-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/blue-sky-369360_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.boka{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.Ansöka{
+    background-color: blanchedalmond;
+    margin-top: 10px ;
+    padding: 10px 10px;
+} 
+.Ansöka img{
+    display: flex;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    
+}
+.Ansöka1 h3{
+    color: #20b2aa;
+}
